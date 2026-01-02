@@ -1,14 +1,21 @@
-void main() {
-  // define by dynamic
-  var name;
-  // it can apply all of these
-  name = 'nico';
-  name = 12;
-  name = true;
+// Without null safety: it cause error
+/*
+bool isEmpty(String string) => string.length == 0;
 
-  // another way
-  dynamic name2;
-  if(name is String){
-    name.contains('.');
+main() {
+  isEmpty(null);
+}
+*/
+
+// but if with '?', it can
+void main() {
+  String? nico = 'nico';
+  nico = null;
+
+  if(nico != null){
+    print(nico.length);
   }
+
+  // it can use more comportable
+  print(nico?.length);
 }
