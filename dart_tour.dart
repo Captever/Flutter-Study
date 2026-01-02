@@ -1,5 +1,7 @@
-void main() {
-  final name = 'nico';
-  // if using final, it cause error
-  name = 'las';
+void main(){
+  late final String name;
+  // do something, go to api
+  // print(name); // it cause error
+  name = 'nico';
+  print(name);  // but after applying new value, it can use
 }
