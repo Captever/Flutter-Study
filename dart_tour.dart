@@ -1,8 +1,14 @@
 void main() {
-  // commonly use
-  var name = '니콜라스';
-  // after defined
-  // name = 1; // this is wrong way
-  // it can update to other value
+  // define by dynamic
+  var name;
+  // it can apply all of these
   name = 'nico';
+  name = 12;
+  name = true;
+
+  // another way
+  dynamic name2;
+  if(name is String){
+    name.contains('.');
+  }
 }
